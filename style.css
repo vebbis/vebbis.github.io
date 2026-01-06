@@ -1,0 +1,188 @@
+/* Karpathy.ai Minimalist Style */
+
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --text-color: #333333;
+  --link-color: #0000FF;
+  --date-color: #888888;
+  --bg-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 15px;
+  /* Looks slighty larger/readable */
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+/* Header Section */
+h2 {
+  font-size: 1.5em;
+  margin: 40px 0 20px 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.bio {
+  margin-bottom: 15px;
+  max-width: 600px;
+  /* Limit width for readability */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9em;
+}
+
+/* Timeline Layout */
+.timeline-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.timeline-date {
+  width: 160px;
+  flex-shrink: 0;
+  font-size: 0.9em;
+  color: var(--date-color);
+  padding-top: 5px;
+  /* Align with text */
+  text-transform: uppercase;
+}
+
+.timeline-logo {
+  width: 90px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  /* Center logo if needed */
+  justify-content: center;
+}
+
+.timeline-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+  /* Slight roundness */
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.timeline-content .role {
+  font-weight: bold;
+  color: #333;
+}
+
+.timeline-content .org {
+  color: #000;
+}
+
+.timeline-content p {
+  margin: 5px 0 0 0;
+}
+
+.timeline-content ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  color: #444;
+}
+
+.timeline-content li {
+  margin-bottom: 3px;
+}
+
+.project-showcase-img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  /* Reasonable max width */
+  margin-top: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .timeline-logo {
+    display: none;
+    /* Hide logos on very small screens to save space, or keep top */
+  }
+}

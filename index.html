@@ -1,17 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Vebjørn</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Vebjørn</h1>
-  <p>Computer Science student</p>
 
-  <p>
-    <a href="https://github.com/">GitHub</a> |
-    <a href="resume.pdf">CV</a>
-  </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vebjørn Haugland</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feather Icons for social links -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <img src="assets/profile.jpg" alt="Vebjørn Haugland" class="profile-img">
+            <div class="header-content">
+                <h1>Vebjørn Haugland</h1>
+                <!-- <p class="tagline">Computer Science Master's Student @ NTNU 🎓 | AI & ML Enthusiast 🤖</p> -->
+                <p class="bio">
+                    I am a master's student in Computer Science at <a href="https://www.ntnu.edu/">NTNU</a>, graduating in 2026.
+                    My academic focus is in theoretical computer science and machine learning, which has led me to exchange studies at
+                    <a href="https://www.mit.edu/">MIT</a> and <a href="https://ethz.ch/en.html">ETH Zürich</a>.
+                    I am currently working on my master's thesis on <em>uncertainty-aware object detection</em> in collaboration with DNV.
+                    I am fluent in PyTorch and have practical experience working with transformer-based architectures and convolutional
+                    neural networks. In my spare time, I explore reinforcement learning.
+                </p>
+                <p class="bio">
+                    I am currently looking for relevant positions -
+                    reach out if you want to connect!
+                </p>
+                <div class="social-links">
+                    <a href="#" id="email-link">Email</a> /
+                    <a href="https://github.com/vebbis">GitHub</a> /
+                    <a href="https://linkedin.com/in/vebjornhaugland">LinkedIn</a> /
+                    <a href="https://www.youtube.com/@vebjornhaugland">YouTube</a> /
+                    <a href="resume.pdf">Resume</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Content (Timeline) -->
+        <div id="about" class="timeline-container">
+
+            <!-- Education: MIT -->
+            <div class="timeline-item">
+                <div class="timeline-date">Sep 2024 - May 2025</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/mit.png" alt="MIT Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>Massachusetts Institute of Technology (MIT)</h3>
+                    <div class="role">Exchange Student</div>
+                    <p>Algorithms and Theoretical ML. Fulbright Scholar.</p>
+                </div>
+            </div>
+
+            <!-- Education: ETH -->
+            <div class="timeline-item">
+                <div class="timeline-date">Sep 2023 - Aug 2024</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/eth.png" alt="ETH Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>ETH Zürich</h3>
+                    <div class="role">Exchange Student</div>
+                    <p>Probabilistic AI, Machine Learning and Big Data.</p>
+                </div>
+            </div>
+
+            <!-- Education: NTNU -->
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2021 - Jun 2026</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/ntnu.png" alt="NTNU Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>NTNU</h3>
+                    <div class="role">M.Sc. in Computer Science</div>
+                    <p>Specialization in AI.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Projects</h2>
+
+        <div id="projects" class="timeline-container">
+
+            <!-- Project: DNV Thesis -->
+            <div class="timeline-item">
+                <div class="timeline-date">2025 - 2026</div>
+                <div class="timeline-logo">
+                    <img src="assets/proj_logos/dnv.png" alt="DNV Project Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>Uncertainty-aware Object Detection with DNV</h3>
+                    <div class="role">Master’s Thesis, NTNU</div>
+                    <p>Building an uncertainty-aware object detector trained on DNV datasets.</p>
+                </div>
+            </div>
+
+            <!-- Project: Snowpole -->
+            <div class="timeline-item">
+                <div class="timeline-date">Fall 2025</div>
+                <!-- Empty logo div to maintain alignment -->
+                <div class="timeline-logo"></div>
+                <!-- Logo moved to content -->
+                <div class="timeline-content">
+                    <h3>Snowpole Object Detection Challenge</h3>
+                    <div class="role">TDT17 - Visual Intelligence, NTNU</div>
+                    <p>Ranked <strong>1st place on the leaderboard</strong> for the snowpole object detection challenge.
+                    </p>
+
+                    <img src="assets/proj_logos/snowpole.png" alt="Snowpole Project Logo" class="project-showcase-img">
+                </div>
+            </div>
+
+            <!-- Project: Smile Detection -->
+            <div class="timeline-item">
+                <div class="timeline-date">Spring 2025</div>
+                <!-- Empty logo div to maintain alignment -->
+                <div class="timeline-logo"></div>
+                <div class="timeline-content">
+                    <h3>Smile Detection</h3>
+                    <div class="role">Final Project, 18.0651 Matrix Methods, MIT</div>
+                    <p>Built an InceptionV3-based classifier on CelebA dataset. Received a score of 100/100 and Grade A.
+                    </p>
+                    <img src="assets/proj_logos/smile.png" alt="Smile Project Logo" class="project-showcase-img">
+                </div>
+            </div>
+
+            <!-- Project: DETR -->
+            <div class="timeline-item">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-logo">
+                    <img src="assets/proj_logos/yt.png" alt="YouTube Project Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>DETR from scratch</h3>
+                    <div class="role">YouTube project, 2025</div>
+                    <p>Coded the popular DEtection TRansformer architecture by Facebook AI Research (FAIR) from scratch
+                        and made a YouTube video of it.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Internships</h2>
+
+        <div id="internships" class="timeline-container">
+            <!-- Internship: DNV -->
+            <div class="timeline-item">
+                <div class="timeline-date">Jun 2025 - Aug 2025</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/dnv.png" alt="DNV Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>DNV</h3>
+                    <div class="role">Summer Internship</div>
+                    <p>Combined mathematical optimization and Monte Carlo sampling to predict ship operating costs.</p>
+                </div>
+            </div>
+
+            <!-- Internship: Haugesund -->
+            <div class="timeline-item">
+                <div class="timeline-date">Jun 2023 - Aug 2023</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/municipality.png" alt="Haugesund Municipality Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>Haugesund Municipality</h3>
+                    <div class="role">Summer Internship</div>
+                    <p>Developed property tax analysis software using Java, PostgreSQL, and Microsoft Azure.</p>
+                </div>
+            </div>
+
+            <!-- Internship: Helsenett -->
+            <div class="timeline-item">
+                <div class="timeline-date">Jun 2022 - Aug 2022</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/helsenett.png" alt="Norsk Helsenett Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>Norsk Helsenett SF</h3>
+                    <div class="role">Summer Internship</div>
+                    <p>Worked in .NET and C# to generate test data for a large-scale system.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Work Experience</h2>
+
+        <div id="experience" class="timeline-container">
+            <!-- Experience: NTNUI Sprint -->
+            <div class="timeline-item">
+                <div class="timeline-date">Sep 2022 - Jun 2023</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/ntnui.png" alt="NTNUI Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>NTNUI Sprint</h3>
+                    <div class="role">Back-end Developer (Volunteer)</div>
+                    <p>Maintained and developed IT solutions for NTNUI, the sports organization at NTNU, with
+                        approximately
+                        15,000 active members.</p>
+                </div>
+            </div>
+
+            <!-- Experience: MentorNorge -->
+
+
+            <!-- Experience: Navy -->
+            <div class="timeline-item">
+                <div class="timeline-date">Jul 2020 - Jul 2021</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/navy.png" alt="Royal Norwegian Navy Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>The Royal Norwegian Navy</h3>
+                    <div class="role">Guard Commander</div>
+                    <p>Compulsory military service. Serving as a guard commander, I was responsible for 6 soldiers and
+                        the
+                        training of new contingents.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Teaching</h2>
+
+        <div id="teaching" class="timeline-container">
+            <!-- Teaching: NTNU -->
+            <div class="timeline-item">
+                <div class="timeline-date">Jan 2023 - Dec 2025</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/ntnu.png" alt="NTNU Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>NTNU</h3>
+                    <div class="role">Learning Assistant</div>
+                    <ul>
+                        <li>TDT4120 - Algorithms and Data Structures, Fall '25</li>
+                        <li>TDT4100 - Object-Oriented Programming in Java, Spring '23</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Oct 2021 - May 2022</div>
+                <div class="timeline-logo">
+                    <img src="assets/logos/mentor.png" alt="MentorNorge Logo">
+                </div>
+                <div class="timeline-content">
+                    <h3>MentorNorge</h3>
+                    <div class="role">Mentor</div>
+                    <p>Provided personalized math tutoring for upper secondary high school students. Helped students
+                        achieve
+                        significant improvements, reaching top-tier grades.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Publications / Preprints</h2>
+
+        <div id="publications" class="timeline-container">
+            <!-- Content to be added -->
+            In progress... :- )
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
